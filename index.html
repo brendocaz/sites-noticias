@@ -9,19 +9,34 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/pt/b/b0/Pac-Man_arte.png" type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <h1>Portal Filmes & Séries</h1>
-        <nav>
-            <a href="">Inicio</a>
-            <a href="">Filmes</a>
-            <a href="">Séries</a>
-            <a href="">Lançamentos</a>
-            <a href="">Contato</a>
-        </nav>
-    </header>
+    <div class="header-mobile">
+      <h1>Portal Filmes & Séries</h1>
+      <img class="icone-menu" src="./imagem/ic-menu.svg" alt="Menu">
+    </div>
+
+    <div class="menu-mobile">
+      <nav>
+        <a href="index.html">Inicío</a>
+        <a href="filmes.html">Filmes</a>
+        <a href="serie.html">Séries</a>
+        <a href="lançamentos.html">Lançamentos</a>
+        <a href="">Contato</a>
+      </nav>
+    </div>
+
+    <nav>
+      <a href="index.html">Inicío</a>
+      <a href="filmes.html">Filmes</a>
+      <a href="serie.html">Séries</a>
+      <a href="lançamentos.html">Lançamentos</a>
+      <a href="">Contato</a>
+    </nav>
+  </header>
 
     <main>
         <section class="noticiap">
@@ -67,6 +82,15 @@
             &copy;2025 Portal filmes & Séries
         </p>
     </footer>
+    
 </body>
+
+<script>
+  const iconeMenu = document.querySelector('.icone-menu');
+  const menuAtivo = document.querySelector('.menu-mobile');
+  iconeMenu.addEventListener('click', () => {
+    menuAtivo.classList.toggle('menu-ativo');
+  });
+</script>
 
 </html>

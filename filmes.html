@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sites de Noticias</title>
+    <link rel="stylesheet" href="ex02.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/pt/b/b0/Pac-Man_arte.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+    <div class="header-mobile">
+      <h1>Portal Filmes & Séries</h1>
+      <img class="icone-menu" src="./imagem/ic-menu.svg" alt="Menu">
+    </div>
+
+    <div class="menu-mobile">
+      <nav>
+        <a href="index.html">Inicío</a>
+        <a href="filmes.html">Filmes</a>
+        <a href="serie.html">Séries</a>
+        <a href="lançamentos.html">Lançamentos</a>
+        <a href="">Contato</a>
+      </nav>
+    </div>
+
+    <nav>
+      <a href="index.html">Inicío</a>
+      <a href="filmes.html">Filmes</a>
+      <a href="serie.html">Séries</a>
+      <a href="lançamentos.html">Lançamentos</a>
+      <a href="">Contato</a>
+    </nav>
+  </header>
+    <main>
+        <section class="container-noticias">
+            <article class="series">
+                <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/04/homem-aranha-tobey-tom-andrew.jpg?w=1200&h=900&crop=0"
+                    alt="">
+                <h3>Homem-Aranha: Sem Volta para Casa</h3>
+                <p>Peter Parker tem a sua identidade secreta revelada e pede ajuda ao Doutor Estranho. Quando o feitiço
+                    para reverter o evento não sai como esperado, o Homem-Aranha e o seu companheiro dos Vingadores
+                    precisam enfrentar inimigos de todo o multiverso.</p>
+            </article>
+            
+            <article class="series">
+                <img src="https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/1928ba61-9826-11ed-aa6e-9587410378a2/chrome_2023-01-19_15-15-29.png"
+                    alt="">
+                <h3>Miles Morales</h3>
+                <p>Depois de se reunir com Gwen Stacy, Homem-Aranha é jogado no multiverso. Lá, o super-herói aracnídeo
+                    encontra uma numerosa equipe encarregada de proteger sua própria existência.</p>
+            </article>
+
+            <article class="series">
+                <img src="https://ambrosia.com.br/wp-content/uploads/2014/05/scale.jpeg" alt="">
+                <h3>O Espetacular Homem-aranha</h3>
+                <p>Peter Parker é um adolescente que desenvolve superpoderes ao ser picado por uma aranha radioativa.
+                    Ele tenta manter a promessa feita ao pai de Gwen Stacey de que a protegeria de longe, mas está
+                    apaixonado. Enquanto isso, os vilões tomam conta da cidade, e o herói enfrenta o poderoso Electro,
+                    seu maior desafio, enquanto alguns segredos sobre o passado vêm à tona.</p>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>
+            &copy;2025 Portal filmes & Séries
+        </p>
+    </footer>
+</body>
+<script>
+  const iconeMenu = document.querySelector('.icone-menu');
+  const menuAtivo = document.querySelector('.menu-mobile');
+  iconeMenu.addEventListener('click', () => {
+    menuAtivo.classList.toggle('menu-ativo');
+  });
+</script>
+</html>

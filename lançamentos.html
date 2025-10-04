@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sites de Noticias</title>
+    <link rel="stylesheet" href="ex02.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/pt/b/b0/Pac-Man_arte.png"
+        type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="header-mobile">
+            <h1>Portal Filmes & Séries</h1>
+            <img class="icone-menu" src="./imagem/ic-menu.svg" alt="Menu">
+        </div>
+
+        <div class="menu-mobile">
+            <nav>
+                <a href="index.html">Inicío</a>
+                <a href="filmes.html">Filmes</a>
+                <a href="serie.html">Séries</a>
+                <a href="lançamentos.html">Lançamentos</a>
+                <a href="">Contato</a>
+            </nav>
+        </div>
+
+        <nav>
+            <a href="index.html">Inicío</a>
+            <a href="filmes.html">Filmes</a>
+            <a href="serie.html">Séries</a>
+            <a href="lançamentos.html">Lançamentos</a>
+            <a href="">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="noticiap">
+            <img src="https://www.invocacaodomal4filme.com.br/images/share.jpg" alt="banner de invocação do mal">
+            <h2>Invocação do Mal 4: O Último Ritual</h2>
+            <p>Em "Invocação do Mal 4: O Último Ritual", Ed e Lorraine Warren, já aposentados, enfrentam um último caso
+                crítico envolvendo a família Smurl e um espelho amaldiçoado que serve como portal para um demônio,
+                culminando no casamento da filha Judy e na despedida emocional do casal da franquia.</p>
+
+        </section>
+
+        <section class="container-noticias">
+            <article class="series">
+                <img src="https://br.web.img2.acsta.net/img/8d/f3/8df3f4de748e61ea7311db6f8fc1d455.jpg" alt="">
+                <h3>O Telefone Preto 2</h3>
+                <p>Black Phone 2 é um futuro filme de terror sobrenatural americano dirigido por Scott Derrickson, e
+                    escrito por Derrickson e C. Robert Cargill, ambos produzindo com Jason Blum. É uma sequência de The
+                    Black Phone, que por sua vez é uma adaptação do conto de 2004 de mesmo nome de Joe Hill.</p>
+            </article>
+
+            <article class="series">
+                <img src="https://br.web.img3.acsta.net/img/ef/d3/efd3cc219ec876e4599b8975908e5ee4.jpg" alt="">
+                <h3>Until Dawn: Noite de Terror</h3>
+                <p>Explorando um centro de visitantes abandonado, Clover e seus amigos encontram um assassino mascarado
+                    que os mata um por um. No entanto, quando eles misteriosamente acordam no início da mesma noite, são
+                    forçados a reviver o terror repetidamente..</p>
+            </article>
+
+            <article class="series">
+                <img src="https://m.media-amazon.com/images/M/MV5BZmI5Y2JmNTItMmRhNC00ZjcxLTg0MjgtYzVlMzA1YzhmMWVmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="">
+                <h3>A Hora do Mal</h3>
+                <p>Todas as crianças da mesma sala de aula, exceto uma, desaparecem misteriosamente na mesma noite e
+                    exatamente no mesmo horário. A comunidade fica se perguntando quem ou o que está por trás do
+                    desaparecimento.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy;2025 Portal filmes & Séries
+        </p>
+    </footer>
+
+</body>
+
+<script>
+    const iconeMenu = document.querySelector('.icone-menu');
+    const menuAtivo = document.querySelector('.menu-mobile');
+    iconeMenu.addEventListener('click', () => {
+        menuAtivo.classList.toggle('menu-ativo');
+    });
+</script>
+
+</html>
