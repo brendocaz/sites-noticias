@@ -65,6 +65,7 @@ main {
     flex: 1 0 auto;
 }
 
+
 .noticiap img {
     -webkit-box-shadow: 1px 1px 13px 4px #808080; 
     box-shadow: 1px 1px 13px 4px #808080;
@@ -197,3 +198,5 @@ footer {
     padding: 20px 15px;
     font-size: 18px
 }
+
+
